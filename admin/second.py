@@ -4,5 +4,6 @@ second = Blueprint('second', __name__, static_folder='static', template_folder='
 
 
 @second.route('/home')
+@second.route('/')
 def home():
     return render_template('home.html')
